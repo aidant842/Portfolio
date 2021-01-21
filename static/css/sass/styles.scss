@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+$main-font: Montserrat;
+$secondary-font: PT Sans;
+$main-color: #181818;
+$font-color: #eaeaea;
+$secondary-color: #00b3ff;;
+$background-color: #252627;
+$heading-padding-desktop: 1.8rem;
+$heading-padding-mobile: 1.2rem ;
+$heading-size-mobile: 2rem;
+
+%button-style {
+    background: transparent;
+    min-width: 120px;
+    height: 40px;
+    color: $font-color !important;
+    border: 1px solid $secondary-color;
+    border-radius: 0.25rem !important;
+}
+
+%button-hover {
+    color: $secondary-color !important;
+    background: rgba($font-color, 0.9);
+    transition: ease-in-out 0.3s;
+}
+
+* {
+    text-align: center;
+}
+
+body {
+    overflow: overlay;
+    overflow-x: hidden;
+    color: $font-color;
+}
+
+.bg {
+    position: relative;
+    background-color: $background-color;
+    left: 90px;
+    width: calc(100% - 90px);
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: $font-color;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $secondary-color !important;
+}
+
+.about-content-section,
+.skills-content-section,
+.contact-content-section{
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.skills-heading,
+ .about-heading,
+ .my-work-heading,
+ .contact-heading{
+     color: #fafafa;
+     text-shadow: 20px 20px 1.2rem rgba(0, 0, 0, 0.8);
+     font-size: 5em;
+     opacity: .8;
+     z-index: 0;
+     padding-left: 20px;
+     font-family: "PT sans";
+     font-weight: 600;
+ }
+
+ .skills-info,
+ .about-me-info{
+     max-width: 900px;
+     background-color: #181818;
+     box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
+     padding: 50px;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+     color: #fafafa;
+     font-family: "Montserrat", sans-serif;
+     font-size: 15px;
+
+ }
+
+ .card {
+    border-radius: 10px;
+    max-height: 275px;
+    border: none;
+}
+ img {
+    height: 275px;
+    width: auto;
+}
+
+.card-img-overlay {
+    color: $font-color;
+    background-color: rgba($main-color, 0.8);
+    display: none;
+    padding: 0;
+}
+
+.image-text {
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    bottom: 0;
+}
+
+.card:hover {
+    transition: 0.3s ease-in-out;
+    .card-img-overlay {
+        display: block;
+        box-shadow: 0px 0px 5px 2px $secondary-color;
+    }
+}
+
+/* ------------------------------Animation (source Youtube with my own edit) */
+
+ .heading-text span{
+     letter-spacing: -10px;
+     animation: animate 2s linear infinite;
+ }
+
+ .heading-text span:nth-child(1){
+     animation-delay: 0s;
+ }
+ .heading-text span:nth-child(2){
+     animation-delay: 0.25s;
+ }
+ .heading-text span:nth-child(3){
+     animation-delay: 0.5s;
+ }
+ .heading-text span:nth-child(4){
+     animation-delay: 0.75s;
+ }
+ .heading-text span:nth-child(5){
+     animation-delay: 1s;
+ }
+ .heading-text span:nth-child(6){
+     animation-delay: 1.25s;
+ }
+
+ @keyframes animate{
+     0%,50%{
+         color: #fff;
+         filter: blur(2px);
+         text-shadow: 0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff;
+     }
+
+     5%,95%{
+         color: #fff;
+         filter: blur(0px);
+         text-shadow: none;
+     }
+ }
+
+@import 'nav';
+@import 'loader';

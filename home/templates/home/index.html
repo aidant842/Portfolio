@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- Main Content -->
+
+	<div class="container main-content main-content-section">
+		<div class="row">
+			<div class="col-12">
+
+				<h1 class="heading-text">Hi,<br>I'm <span>A</span>
+					<span>i</span>
+					<span>d</span>
+					<span>a</span>
+					<span>n</span>
+					,<br>Full Stack Developer.</h1>
+
+					<button class="btn contact-button" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+
+					<div class="cv">
+						<a target="_blank" href="assets/cv/aidan-thorpe-cv.pdf">Download CV
+							<i class="fa fa-download"></i></a>
+					</div>
+
+					<div class="arrow-link">
+						<a href="#my-work"><i class="fas fa-chevron-down"></i></a>
+					</div>
+
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- My Work -->
+
+	<section id="myWork">
+		<a id="my-work"></a>
+		<div class="container my-work-container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="my-work-heading">My Work</h2>
+
+					<!--Cards from bootstrap  -->
+
+					    <div class="card">
+                            <img
+                            src="media/headerImg.png"
+                            class="card-img"
+                            alt=""
+                            />
+                            <div class="card-img-overlay">
+                                <div class="image-text">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text">
+                                    </p>
+                                    <div class="buy-section">
+                                        <a class="btn buy-now-btn" href="">Visit <i class="fas fa-external-link-square-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<hr>
+
+	<!-- Skills Section -->
+	<section>
+		<a id="skills"></a>
+		<div class="container skills-content-section skills-content">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="skills-heading">Skills</h2>
+					<div class="skills-container">
+						<p class="skills-info">
+							<span class="info-header">FRONT END</span>
+							I'm skilled in User Experience Design using the trinity of HTML/CSS/JavaScript.
+
+							<span class="info-header">BACK END</span>
+							I specialize in data-driven web applications. Many of my projects utilize document-based
+							data. I use Python and Django in conjunction with MongoDB to process and present
+							information.
+						</p>
+					</div>
+
+					<!-- Progress Bar Acquired from bootstrap Documentation -->
+					<div class="bar-container">
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70"
+								aria-valuemin="0" aria-valuemax="100"></div>
+							<span class="subject">HTML / HTML5</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70"
+								aria-valuemin="0" aria-valuemax="100"></div>
+							<span class="subject">CSS / CSS3</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40"
+								aria-valuemin="0" aria-valuemax="100"></div>
+							<span class="subject">JavaScript</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10"
+								aria-valuemin="0" aria-valuemax="100"></div>
+							<span class="subject">Python</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10"
+								aria-valuemin="0" aria-valuemax="100"></div>
+							<span class="subject">Django</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10"
+								aria-valuemin="0" aria-valuemax="100"></div>
+							<span class="subject">MongoDB</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<hr>
+
+	<!-- About Section -->
+	<section>
+		<a id="about"></a>
+		<div class="container about-content-section about-content">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="about-heading">About</h2>
+					<div class="about-me-info-container">
+						<p class="about-me-info">
+							<span class="info-header">WHAT DO I DO?</span>
+							I'm a skilled Full Stack Developer with a wealth of diverse life and technical
+							experience that I bring to every project.
+
+							<span class="info-header">HOW DO I DO IT?</span>
+							I follow form as well as function. I know that the aesthetics of effective design
+							combined with application speed, security and reliability combine to create a great user
+							experience.
+
+							<span class="info-header">WHY HIRE ME?</span>
+							I work quickly and effectively in getting things built and working across the stack. I'm
+							an excellent communicator who thrives in bright and enthusiastic teams and I'm also a
+							self-starter when working solo.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<hr>
+
+
+	<!-- Contact Section -->
+	<section>
+		<a id="contact"></a>
+		<div class="container contact-content-section contact-content">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="contact-heading">Contact</h2>
+					<div class="personal-info">
+						<h3>Personal Info</h3>
+						<p>Name:&nbsp; Aidan Thorpe</p>
+						<p>Email:&nbsp; Aidant842@gmail.com</p>
+						<p>Phone:&nbsp; +00353851699108</p>
+					</div>
+					<div class="contact-info-container">
+
+						<!-- form from bootstrap -->
+
+						<form class="contact-form" id="contactForm">
+							<h3>Let's Work Together!</h3>
+							<div class="form-group">
+								<label for="inputEmail">Email address</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Enter email"
+									required>
+							</div>
+
+								<div class="form-group">
+									<label for="inputName">Name</label>
+									<input type="text" class="form-control" id="inputName" placeholder="Enter name"
+									required>
+							</div>
+
+									<div class="form-group">
+										<label for="textArea">Message</label>
+										<textarea class="form-control" id="textArea" rows="3" required></textarea>
+									</div>
+									<button type="submit" id="mainButton" class="btn submit-button">Submit</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<!-- Footer -->
+
+	<footer class="container-fluid footer-container">
+
+		<div class="col-12">
+
+			<h5 class="footer-header">Social</h5>
+			<ul class="list-inline social-links">
+				<li class="list-inline-item">
+					<a target="_blank" href="https://www.facebook.com/aidan.thorpe.1">
+						<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						<span class="sr-only">Facebook</span>
+					</a>
+				</li>
+
+				<li class="list-inline-item">
+					<a target="_blank" href="https://www.linkedin.com/in/aidan-thorpe-99a8451a5/">
+						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+						<span class="sr-only">LinkedIn</span>
+					</a>
+				</li>
+
+				<li class="list-inline-item">
+					<a target="_blank" href="https://www.instagram.com/aidan.thorpe.1/">
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+						<span class="sr-only">Instagram</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+	</footer>
+
+	<!-- Modal from bootstrap -->
+
+	<div class="modal" tabindex="-1" role="dialog" id="contactModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Contact Me</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<form class="modal-contact-form" id="modalContactForm">
+						<div class="form-group">
+							<label for="modalInputEmail">Email address</label>
+							<input type="email" class="form-control" id="modalInputEmail" placeholder="Enter email"
+								required>
+						</div>
+
+                        <div class="form-group">
+                            <label for="modalInputName">Name</label>
+                            <input type="text" class="form-control" id="modalInputName" placeholder="Enter name"
+                            required>
+						</div>
+
+                        <div class="form-group">
+                            <label for="modalTextArea">Message</label>
+                            <textarea class="form-control" id="modalTextArea" rows="3"
+                            placeholder="Please write your message here" required></textarea>
+                        </div>
+                        <button type="submit" id="modalButton" class="btn submit-button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
