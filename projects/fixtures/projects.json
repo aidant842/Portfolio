@@ -1,0 +1,46 @@
+[
+    {
+        "pk": 1,
+        "model": "projects.project",
+        "fields": {
+            "name": "Portfolio project",
+            "languages": "HTML/CSS/JS/Bootstrap",
+            "site_link": "https://aidant842.github.io/MSP1/",
+            "github_link": "https://github.com/aidant842/MSP1",
+            "image": "portfolio_project.JPG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "projects.project",
+        "fields": {
+            "name": "Snake",
+            "languages": "HTML/CSS/JS",
+            "site_link": "https://aidant842.github.io/MSP2/",
+            "github_link": "https://github.com/aidant842/MSP2",
+            "image": "snake.JPG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "projects.project",
+        "fields": {
+            "name": "GameDB",
+            "languages": "HTML/CSS/JS/Materialize/MonogoDB/Flask/Heroku",
+            "site_link": "https://gamersdb.herokuapp.com/",
+            "github_link": "https://github.com/aidant842/MilestoneProject3",
+            "image": "gamedb.JPG"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "projects.project",
+        "fields": {
+            "name": "PG Photography",
+            "languages": "HTML/CSS/JS/Bootstrap/Django/AWS/Heroku",
+            "site_link": "https://pg-photography.herokuapp.com/",
+            "github_link": "https://github.com/aidant842/MilestoneProject4",
+            "image": "pg_photography.JPG"
+        }
+    }
+]

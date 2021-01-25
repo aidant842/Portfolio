@@ -56,12 +56,31 @@ a:hover {
     color: $secondary-color !important;
 }
 
+.heading-text {
+    font-size: 3.5rem;
+}
+
+.cv {
+    font-size: 1.2rem;
+}
+
+.sub-headers {
+    display: block;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 17px;
+    color: $secondary-color;
+}
+
 .about-content-section,
 .skills-content-section,
 .contact-content-section{
     height: auto;
     margin-top: 10px;
     padding-bottom: 20px;
+    display: grid;
+    align-content: center;
+    align-items: center;
 }
 
 .skills-heading,
@@ -84,19 +103,20 @@ a:hover {
      background-color: #181818;
      box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
      padding: 50px;
-     margin-top: 50px;
      text-align: center;
      z-index: 1;
      color: #fafafa;
      font-family: "Montserrat", sans-serif;
      font-size: 15px;
-
+     display: grid;
+     margin: 50px auto;
  }
 
  .card {
     border-radius: 10px;
     max-height: 275px;
     border: none;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.8);
 }
  img {
     height: 275px;
@@ -105,7 +125,7 @@ a:hover {
 
 .card-img-overlay {
     color: $font-color;
-    background-color: rgba($main-color, 0.8);
+    background-color: rgba(0,0,0, 0.8);
     display: none;
     padding: 0;
 }
@@ -124,6 +144,124 @@ a:hover {
         box-shadow: 0px 0px 5px 2px $secondary-color;
     }
 }
+
+.buy-now-btn {
+    color: $font-color;
+    font-size: 2.5rem;
+}
+
+hr {
+    background-color: $secondary-color;
+    width: 15%;
+    height: 2px;
+}
+
+ .my-work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 400px));
+    grid-gap: 30px;
+    padding: 3rem 5rem;
+    justify-content: center;
+ }
+
+
+ .main-content{
+    color: #fafafa;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0 20px 0;
+ }
+
+  .contact-button{
+     margin: 20px 0 20px 0;
+     height: 45px;
+     width: 150px;
+     text-transform: uppercase;
+     background-color: transparent;
+     border: 3px solid $secondary-color;
+     color: $secondary-color;
+     border-radius: 0;
+     letter-spacing: 2px;
+     position: relative;
+     transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+ }
+
+ .contact-button:hover{
+    color: $secondary-color;
+    background-color: $main-color;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+/* ------------------------------Contact */
+
+.contact-form{
+    padding: 100px;
+    margin-top: 20px;
+    background-color: #181818;
+    color: #fafafa;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form h3{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #00b3ff;
+}
+
+.personal-info{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.submit-button{
+    background-color: $font-color;
+    color: $main-color;
+}
+
+.submit-button:hover{
+    background-color: #00b3ff;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ------------------------------Footer */
+
+.footer-container{
+    background-color: #181818;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 25px;
+    height: 110px;
+}
+
+.social-links li i{
+    color: #fafafa;
+}
+
+footer h5{
+    color: #00b3ff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+ @media only screen and (max-width: 600px) {
+    .bg {
+        left: 0;
+        bottom: 64px;
+        width: 100%;
+        margin-top: 64px;
+    }
+ }
 
 /* ------------------------------Animation (source Youtube with my own edit) */
 
@@ -168,6 +306,18 @@ a:hover {
          text-shadow: none;
      }
  }
+
+@keyframes arrow-jump {
+  0%   { opacity: 0;}
+  100% { opacity: 1;
+        transform: translateY(10px);
+    }
+  
+}
+#arrow {
+  animation: arrow-jump 1s infinite;
+  font-size: 1.2rem;
+}
 
 @import 'nav';
 @import 'loader';

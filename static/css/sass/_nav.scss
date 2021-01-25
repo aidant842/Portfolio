@@ -24,6 +24,8 @@
     font-size: 1.3rem;
     line-height: 50px;
     justify-self: center;
+    padding: 0;
+    font-size: 1.8rem;
 }
 
 .misc-links a{
@@ -38,7 +40,8 @@
     display: grid;
     margin: 0;
     transform: translateX(-100%);
-    justify-items: center;
+    justify-items: right;
+    padding: 0;
 }
 
 .nav-links li.link a {
@@ -169,10 +172,9 @@
     transform: rotate(45deg) translate(-6px, -8px);
 }
 
-a.user-link, a.bag-link, div.tools-link {
+a.github-link, a.linkedin-link {
     display: none;
     color: $font-color;
-    font-size: 1.2rem;
 }
 
 .dropdown-menu {
@@ -247,23 +249,20 @@ a.user-link, a.bag-link, div.tools-link {
         display: none;
     }
 
-    a.user-link {
+    a.linkedin-link {
         grid-column: 2;
         justify-self: center;
         display: block;
+        grid-row: 1;
+        font-size: 1.6rem;
     }
 
-    a.bag-link {
+    a.github-link {
         grid-column: 4;
         justify-self: center;
         display: block;
-    }
-
-    div.tools-link {
-        grid-column: 3;
         grid-row: 1;
-        justify-self: center;
-        display: block;
+        font-size: 1.6rem;
     }
 
     .nav-links {
