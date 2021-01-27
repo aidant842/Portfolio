@@ -148,6 +148,16 @@ hr {
   padding: 50px 0 20px 0;
 }
 
+.skills-img {
+  height: 3rem;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+span.skills-list i {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
 .contact-button {
   margin: 20px 0 20px 0;
   height: 45px;
@@ -172,7 +182,7 @@ hr {
 
 /* ------------------------------Contact */
 .contact-form {
-  padding: 100px;
+  padding: 35px;
   margin-top: 20px;
   background-color: #181818;
   color: #fafafa;
