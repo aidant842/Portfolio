@@ -235,47 +235,47 @@ footer h5 {
   }
 }
 /* ------------------------------Animation (source Youtube with my own edit) */
-.heading-text span {
-  letter-spacing: -10px;
-  animation: animate 2s linear infinite;
-}
+/*  .heading-text span{
+     letter-spacing: -10px;
+     animation: animate 2s linear infinite;
+ }
 
-.heading-text span:nth-child(1) {
-  animation-delay: 0s;
-}
+ .heading-text span:nth-child(1){
+     animation-delay: 0s;
+ }
+ .heading-text span:nth-child(2){
+     animation-delay: 0.25s;
+ }
+ .heading-text span:nth-child(3){
+     animation-delay: 0.5s;
+ }
+ .heading-text span:nth-child(4){
+     animation-delay: 0.75s;
+ }
+ .heading-text span:nth-child(5){
+     animation-delay: 1s;
+ }
+ .heading-text span:nth-child(6){
+     animation-delay: 1.25s;
+ }
 
-.heading-text span:nth-child(2) {
-  animation-delay: 0.25s;
-}
+ @keyframes animate{
+     0%,50%{
+         color: #fff;
+         filter: blur(2px);
+         text-shadow: 0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff;
+     }
 
-.heading-text span:nth-child(3) {
-  animation-delay: 0.5s;
-}
-
-.heading-text span:nth-child(4) {
-  animation-delay: 0.75s;
-}
-
-.heading-text span:nth-child(5) {
-  animation-delay: 1s;
-}
-
-.heading-text span:nth-child(6) {
-  animation-delay: 1.25s;
-}
-
-@keyframes animate {
-  0%, 50% {
-    color: #fff;
-    filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
-  }
-  5%, 95% {
-    color: #fff;
-    filter: blur(0px);
-    text-shadow: none;
-  }
-}
+     5%,95%{
+         color: #fff;
+         filter: blur(0px);
+         text-shadow: none;
+     }
+ } */
 @keyframes arrow-jump {
   0% {
     opacity: 0;

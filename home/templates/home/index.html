@@ -7,12 +7,7 @@
 		<div class="row">
 			<div class="col-12">
 
-				<h1 class="heading-text">Hi,<br>I'm <span>A</span>
-					<span>i</span>
-					<span>d</span>
-					<span>a</span>
-					<span>n</span>
-					,<br>Full Stack Developer.</h1>
+				<h1 class="heading-text">Hi,<br>I'm Aidan,<br>Full Stack Developer.</h1>
 
 					<button class="btn contact-button" data-toggle="modal" data-target="#contactModal">Contact Me</button>
 
@@ -130,26 +125,26 @@
 
 						<!-- form from bootstrap -->
 
-						<form class="contact-form" id="contactForm">
+						<form class="contact-form" id="contactForm" method="POST" action="{% url 'home' %}">
+                            {% csrf_token %}
 							<h3>Let's Work Together!</h3>
 							<div class="form-group">
 								<label for="inputEmail">Email address</label>
-								<input type="email" class="form-control" id="inputEmail" placeholder="Enter email"
+								<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter email"
 									required>
 							</div>
 
-								<div class="form-group">
+							<div class="form-group">
 									<label for="inputName">Name</label>
-									<input type="text" class="form-control" id="inputName" placeholder="Enter name"
+									<input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name"
 									required>
 							</div>
 
-									<div class="form-group">
-										<label for="textArea">Message</label>
-										<textarea class="form-control" id="textArea" rows="3" required></textarea>
-									</div>
-									<button type="submit" id="mainButton" class="btn submit-button">Submit</button>
-
+                            <div class="form-group">
+                                <label for="textArea">Message</label>
+                                <textarea class="form-control" id="textArea" name="message" rows="3" required></textarea>
+                            </div>
+							<button type="submit" id="mainButton" class="btn submit-button">Submit</button>
 						</form>
 					</div>
 				</div>
@@ -171,7 +166,8 @@
 				</div>
 				<div class="modal-body">
 
-					<form class="modal-contact-form" id="modalContactForm">
+					<form class="modal-contact-form" id="modalContactForm" method="POST" action="{% url 'home' %}">
+                        {% csrf_token %}
 						<div class="form-group">
 							<label for="modalInputEmail">Email address</label>
 							<input type="email" class="form-control" id="modalInputEmail" placeholder="Enter email"
