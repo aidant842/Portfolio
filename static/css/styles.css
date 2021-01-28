@@ -23,11 +23,13 @@ body {
 
 a {
   color: #eaeaea;
+  transition: 0.2s;
 }
 
 a:hover {
   text-decoration: none;
   color: #00b3ff !important;
+  transition: ease-in-out 0.2s;
 }
 
 .heading-text {
@@ -66,7 +68,6 @@ a:hover {
   font-size: 5em;
   opacity: 0.8;
   z-index: 0;
-  padding-left: 20px;
   font-family: "PT sans";
   font-weight: 600;
 }
@@ -156,6 +157,12 @@ hr {
 span.skills-list i {
   font-size: 2rem;
   padding: 0.5rem;
+  transition: 0.2s;
+}
+
+span.skills-list i:hover {
+  color: #00b3ff;
+  transition: 0.2s;
 }
 
 .contact-button {
@@ -178,6 +185,40 @@ span.skills-list i {
   background-color: #181818;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
+}
+
+.message-container {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 9999999999999;
+}
+
+.toast {
+  background-color: #00b3ff;
+}
+
+.modal-content {
+  background-color: #181818;
+}
+
+.modal-header,
+.modal-body {
+  color: #eaeaea;
+}
+
+.submit-button {
+  background-color: #eaeaea;
+  color: #181818;
+}
+
+.close {
+  color: #eaeaea;
+  opacity: 1;
+}
+
+.close:hover {
+  color: #00b3ff;
 }
 
 /* ------------------------------Contact */
@@ -242,6 +283,10 @@ footer h5 {
     bottom: 64px;
     width: 100%;
     margin-top: 64px;
+  }
+
+  .heading-text {
+    font-size: 2rem;
   }
 }
 /* ------------------------------Animation (source Youtube with my own edit) */
@@ -424,7 +469,8 @@ footer h5 {
 }
 
 .logo:hover {
-  color: #eaeaea !important;
+  color: #00b3ff !important;
+  transition: ease-in-out 0.2s;
 }
 
 .burger {

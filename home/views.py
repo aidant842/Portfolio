@@ -12,19 +12,19 @@ def index(request):
     projects = Project.objects.all()
 
     if request.method == 'POST':
-        email = request.POST.get('email')
+        from_email = request.POST.get('email')
         name = request.POST.get('name')
-        body = request.POST.get('message')
+        message = request.POST.get('message')
 
         subject = f'Message from { name }'
 
         send_mail(
                 subject,
-                body,
-                email,
+                message,
+                from_email,
                 [settings.DEFAULT_FROM_EMAIL]
                 )
-        messages.success(request, 'Dispatch E-mail sent to user.')
+        messages.success(request, 'Thank you, your email was sent, I\'ll be in contact soon.')
 
     context = {
         'projects': projects,

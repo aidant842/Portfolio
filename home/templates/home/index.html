@@ -6,20 +6,15 @@
 	<div class="container main-content main-content-section">
 		<div class="row">
 			<div class="col-12">
-
 				<h1 class="heading-text">Hi,<br>I'm Aidan,<br>Full Stack Developer.</h1>
-
-					<button class="btn contact-button" data-toggle="modal" data-target="#contactModal">Contact Me</button>
-
-					<div class="cv">
-						<a target="_blank" rel="noopener" href="">Download CV
-							<i class="fa fa-download"></i></a>
-					</div>
-
-					<div class="arrow-link">
-						<a href="#my-work"><i class="fas fa-chevron-down" id="arrow"></i></a>
-					</div>
-
+                <button class="btn contact-button" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+                <div class="cv">
+                    <a target="_blank" rel="noopener" href="">Download CV
+                        <i class="fa fa-download"></i></a>
+                </div>
+                <div class="arrow-link">
+                    <a href="#my-work"><i class="fas fa-chevron-down" id="arrow"></i></a>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -29,8 +24,8 @@
     <!-- My Work -->
 
 	<section id="myWork">
-        <a id="my-work"></a>
-        <h2 class="my-work-heading">My Work</h2>
+        <a id="projects"></a>
+        <h2 class="my-work-heading">Projects</h2>
 		<div class="container my-work-container">
 					<!--Cards from bootstrap  -->
                     {% for project in projects %}
@@ -56,29 +51,7 @@
                     {% endfor %}
 				</div>
 	</section>
-
 	<hr>
-
-	<!-- Skills Section -->
-<!-- 	<section>
-		<a id="skills"></a>
-		<div class="container skills-content-section skills-content">
-            <h2 class="skills-heading">Skills</h2>
-            <div class="skills-container">
-                <p class="skills-info">
-                    <span class="sub-headers">FRONT END</span>
-                    I'm skilled in User Experience Design using the trinity of HTML/CSS/JavaScript.
-
-                    <span class="sub-headers">BACK END</span>
-                    I specialize in data-driven web applications. Many of my projects utilize document-based
-                    data. I use Python and Django in conjunction with MongoDB to process and present
-                    information.
-                </p>
-            </div>
-		</div>
-	</section>
- -->
-<!-- 	<hr> -->
 
 	<!-- About Section -->
 	<section>
@@ -98,25 +71,11 @@
                                 <i class="fab fa-python"></i>
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-sass"></i>
-                             <!--    <img src="/media/django.png" class="skills-img">
-                                <img src="/media/flask.png" class="skills-img"> -->
                             </span>
-                            <!-- <ul class="skills-list">
-                                <li><i class="fab fa-html5"></i></li>
-                                <li><i class="fab fa-css3-alt"></i></li>
-                                <li><i class="fab fa-python"></i></li>
-                                <li><i class="fab fa-js-square"></i></li>
-                                <li><i class="fab fa-sass"></i></li>
-                                <li><img src="/media/django.png" class="skills-img"></li>
-                                <li><img src="/media/flask.png" class="skills-img"></li>
-                            </ul> -->
 						</p>
 					</div>
 				</div>
-
-
 	</section>
-
 	<hr>
 
 
@@ -180,19 +139,19 @@
                         {% csrf_token %}
 						<div class="form-group">
 							<label for="modalInputEmail">Email address</label>
-							<input type="email" class="form-control" id="modalInputEmail" placeholder="Enter email"
+							<input type="email" class="form-control" id="modalInputEmail" name="email" placeholder="Enter email"
 								required>
 						</div>
 
                         <div class="form-group">
                             <label for="modalInputName">Name</label>
-                            <input type="text" class="form-control" id="modalInputName" placeholder="Enter name"
+                            <input type="text" class="form-control" id="modalInputName" name="name" placeholder="Enter name"
                             required>
 						</div>
 
                         <div class="form-group">
                             <label for="modalTextArea">Message</label>
-                            <textarea class="form-control" id="modalTextArea" rows="3"
+                            <textarea class="form-control" id="modalTextArea" name="message" rows="3"
                             placeholder="Please write your message here" required></textarea>
                         </div>
                         <button type="submit" id="modalButton" class="btn submit-button">Submit</button>

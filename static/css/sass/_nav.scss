@@ -126,7 +126,8 @@
 }
 
 .logo:hover {
-    color: $font-color !important;
+    color: $secondary-color !important;
+    transition: ease-in-out 0.2s;
 }
 
 .burger {
