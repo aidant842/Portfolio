@@ -1,3 +1,5 @@
+/* Cards JavaScript */
+
 const cardFade = () => {
     const cards = document.querySelectorAll('.card');
     const cardOverlay = document.querySelectorAll('.card-img-overlay');
@@ -14,6 +16,36 @@ const cardFade = () => {
         });
     });
 }
+
+/* Btt Link JavaScript */
+
+const bttLink = () => {
+    //Get the button:
+    mybutton = document.querySelector(".bttLink");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            mybutton.classList.add('bttLinkTranslate');
+        } else if (document.body.scrollTop < 300 || document.documentElement.scrollTop < 300){
+            mybutton.classList.remove('bttLinkTranslate');
+        }
+    }
+
+    mybutton.onclick = function() {
+        topFunction();
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    } 
+}
+
+/* Navigation JavaScript */
 
 const navSlide = () => {
     const logo = document.querySelector('.logo');
@@ -88,28 +120,9 @@ const navSlide = () => {
 
 navSlide();
 cardFade();
+bttLink();
 
-/* Cursor */
-
-let mouseCursor = document.querySelector(".cursor");
-let links = document.querySelectorAll('a, button');
-
-window.addEventListener('mousemove', cursor);
-
-function cursor(e){
-    mouseCursor.style.top = e.pageY + 'px';
-    mouseCursor.style.left = e.pageX + 'px';
-}
-
-links.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('link-grow');
-    });
-
-    link.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('link-grow');
-    });
-});
+/* Loader */
 
 document.body.onload = function () {
   document.querySelector(".loader-bg").classList.add("hidden");
