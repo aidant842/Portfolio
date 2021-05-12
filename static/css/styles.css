@@ -260,7 +260,7 @@ span.skills-list i:hover {
 .bttLink {
   position: fixed;
   bottom: -50px;
-  right: 30px;
+  right: 50px;
   z-index: 2;
   border: none;
   outline: none;
@@ -279,8 +279,8 @@ span.skills-list i:hover {
 }
 
 .bttLink:hover {
-  background: #181818;
-  color: #00b3ff;
+  background: #00b3ff;
+  color: #eaeaea;
   transition: all 0.5s;
 }
 
@@ -319,7 +319,7 @@ footer h5 {
   }
 
   .bttLink {
-    right: 10px;
+    right: 25px;
   }
 
   .bttLinkTranslate {
