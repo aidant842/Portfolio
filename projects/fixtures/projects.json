@@ -42,5 +42,27 @@
             "github_link": "https://github.com/aidant842/MilestoneProject4",
             "image": "pg_photography.JPG"
         }
+    },
+    {
+        "pk": 5,
+        "model": "projects.project",
+        "fields": {
+            "name": "MyMo.ie",
+            "languages": "HTML/CSS/JS/Bootstrap/Django/AWS/Heroku",
+            "site_link": "https://mymo.ie",
+            "github_link": "https://github.com/aidant842/mymo",
+            "image": "mymo.JPG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "projects.project",
+        "fields": {
+            "name": "Icecapades",
+            "languages": "HTML/CSS/JS",
+            "site_link": "https://aidant842.github.io/icecapades/",
+            "github_link": "https://github.com/aidant842/icecapades",
+            "image": "icecapades.png"
+        }
     }
 ]
